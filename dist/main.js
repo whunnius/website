@@ -22,7 +22,7 @@ camera.position.setZ(60);
 renderer.render(scene,camera);
 
 const earthTexture = new THREE.TextureLoader().load('2560px-Large_World_Topo_Map_2.png')
-var rocket;
+// var rocket;
 // const loader = new GLTFLoader();
 // loader.load(
 // 	'scene.gltf',
@@ -40,16 +40,16 @@ var rocket;
 //     rocket.rotation.y =1
 //     rocket.position.z = 0
 //     rocket.position.x = -10
-	},
-	( xhr ) => {
-		// called while loading is progressing
-		console.log( `${( xhr.loaded / xhr.total * 100 )}% loaded` );
-	},
-	( error ) => {
-		// called when loading has errors
-		console.error( 'An error happened', error );
-	},
-);
+// 	},
+// 	( xhr ) => {
+// 		// called while loading is progressing
+// 		console.log( `${( xhr.loaded / xhr.total * 100 )}% loaded` );
+// 	},
+// 	( error ) => {
+// 		// called when loading has errors
+// 		console.error( 'An error happened', error );
+// 	},
+// );
 
 
 
@@ -129,10 +129,10 @@ function animate(){
   will.rotation.y += 0.008;
   will.rotation.z += 0.008;
  
-//   rocket.rotateY(.006);
-//   rocket.position.z += 0.05;
-//   rocket.position.x += 0.0002;
-//   rocket.rotation.y += 0.00006;
+  // rocket.rotateY(.006);
+  // rocket.position.z += 0.05;
+  // rocket.position.x += 0.0002;
+  // rocket.rotation.y += 0.00006;
   
   
 
