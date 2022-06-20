@@ -1,6 +1,6 @@
 import * as THREE from 'https://unpkg.com/three@0.127.0/build/three.module.js'
 
-import { GLTFLoader } from 'https://unpkg.com/three@0.120.1/examples/jsm/loaders/GLTFLoader'
+// import { GLTFLoader } from 'https://unpkg.com/three@0.120.1/examples/jsm/loaders/GLTFLoader'
 
 
 
@@ -22,34 +22,34 @@ camera.position.setZ(60);
 renderer.render(scene,camera);
 
 const earthTexture = new THREE.TextureLoader().load('2560px-Large_World_Topo_Map_2.png')
-var rocket;
-const loader = new GLTFLoader();
-loader.load(
-	'scene.gltf',
-	( gltf ) => {
-		// called when the resource is loaded
-    rocket = gltf.scene;
-		scene.add( rocket );
+// var rocket;
+// const loader = new GLTFLoader();
+// loader.load(
+// 	'scene.gltf',
+// 	( gltf ) => {
+// 		// called when the resource is loaded
+//     rocket = gltf.scene;
+// 		scene.add( rocket );
     
-    rocket.scale.set(100,100,100)
-    // rocket.rotation.z = 0
-    // rocket.rotation.x =0
-     //rocket.rotation.y =0
-    rocket.rotation.z = 0.4
-    rocket.rotation.x =1.4
-    rocket.rotation.y =1
-    rocket.position.z = 0
-    rocket.position.x = -10
-	},
-	( xhr ) => {
-		// called while loading is progressing
-		console.log( `${( xhr.loaded / xhr.total * 100 )}% loaded` );
-	},
-	( error ) => {
-		// called when loading has errors
-		console.error( 'An error happened', error );
-	},
-);
+//     rocket.scale.set(100,100,100)
+//     // rocket.rotation.z = 0
+//     // rocket.rotation.x =0
+//      //rocket.rotation.y =0
+//     rocket.rotation.z = 0.4
+//     rocket.rotation.x =1.4
+//     rocket.rotation.y =1
+//     rocket.position.z = 0
+//     rocket.position.x = -10
+// 	},
+// 	( xhr ) => {
+// 		// called while loading is progressing
+// 		console.log( `${( xhr.loaded / xhr.total * 100 )}% loaded` );
+// 	},
+// 	( error ) => {
+// 		// called when loading has errors
+// 		console.error( 'An error happened', error );
+// 	},
+// );
 
 
 
@@ -129,10 +129,10 @@ function animate(){
   will.rotation.y += 0.008;
   will.rotation.z += 0.008;
  
-  rocket.rotateY(.006);
-  rocket.position.z += 0.05;
-  rocket.position.x += 0.0002;
-  rocket.rotation.y += 0.00006;
+  // rocket.rotateY(.006);
+  // rocket.position.z += 0.05;
+  // rocket.position.x += 0.0002;
+  // rocket.rotation.y += 0.00006;
   
   
 
